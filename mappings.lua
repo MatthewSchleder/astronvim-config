@@ -14,6 +14,9 @@ mappings.n = {
   ["<leader>bc"] = { "<cmd>BufferLinePickClose<cr>", desc = "Pick to close" },
   ["<leader>bj"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" },
   ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
+
+  -- https://github.com/seqizz/jb
+  ["<leader>tj"] = { function() astronvim.toggle_term_cmd "jb" end, desc = "ToggleTerm jb" },
 }
 
 return mappings
