@@ -65,71 +65,6 @@ local Friday = {
 }
 
 
-local coolLines = {
-  [[    ███╗   ███╗ █████╗ ██╗  ██╗███████╗   ]],
-  [[    ████╗ ████║██╔══██╗██║ ██╔╝██╔════╝   ]],
-  [[    ██╔████╔██║███████║█████╔╝ █████╗     ]],
-  [[    ██║╚██╔╝██║██╔══██║██╔═██╗ ██╔══╝     ]],
-  [[    ██║ ╚═╝ ██║██║  ██║██║  ██╗███████╗   ]],
-  [[    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ]],
-  [[      ██████╗ ██████╗  ██████╗ ██╗        ]],
-  [[     ██╔════╝██╔═══██╗██╔═══██╗██║        ]],
-  [[     ██║     ██║   ██║██║   ██║██║        ]],
-  [[     ██║     ██║   ██║██║   ██║██║        ]],
-  [[     ╚██████╗╚██████╔╝╚██████╔╝███████╗   ]],
-  [[      ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝   ]],
-  [[███████╗████████╗██╗   ██╗███████╗███████╗]],
-  [[██╔════╝╚══██╔══╝██║   ██║██╔════╝██╔════╝]],
-  [[███████╗   ██║   ██║   ██║█████╗  █████╗  ]],
-  [[╚════██║   ██║   ██║   ██║██╔══╝  ██╔══╝  ]],
-  [[███████║   ██║   ╚██████╔╝██║     ██║     ]],
-  [[╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝     ]],
-}
-
-local robustLines  = {
-  [[        ██████╗ ██╗   ██╗██╗██╗     ██████╗         ]],
-  [[        ██╔══██╗██║   ██║██║██║     ██╔══██╗        ]],
-  [[        ██████╔╝██║   ██║██║██║     ██║  ██║        ]],
-  [[        ██╔══██╗██║   ██║██║██║     ██║  ██║        ]],
-  [[        ██████╔╝╚██████╔╝██║███████╗██████╔╝        ]],
-  [[        ╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝         ]],
-  [[ ██████╗  ██████╗ ██████╗ ██╗   ██╗███████╗████████╗]],
-  [[ ██╔══██╗██╔═══██╗██╔══██╗██║   ██║██╔════╝╚══██╔══╝]],
-  [[ ██████╔╝██║   ██║██████╔╝██║   ██║███████╗   ██║   ]],
-  [[ ██╔══██╗██║   ██║██╔══██╗██║   ██║╚════██║   ██║   ]],
-  [[ ██║  ██║╚██████╔╝██████╔╝╚██████╔╝███████║   ██║   ]],
-  [[ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝   ╚═╝   ]],
-  [[     ███████╗████████╗██╗   ██╗███████╗███████╗     ]],
-  [[     ██╔════╝╚══██╔══╝██║   ██║██╔════╝██╔════╝     ]],
-  [[     ███████╗   ██║   ██║   ██║█████╗  █████╗       ]],
-  [[     ╚════██║   ██║   ██║   ██║██╔══╝  ██╔══╝       ]],
-  [[     ███████║   ██║   ╚██████╔╝██║     ██║          ]],
-  [[     ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝          ]],
-}
-
-
-
-local efficientLines  = {
-  [[             ██████╗██████╗  █████╗ ███████╗████████╗            ]],
-  [[            ██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝            ]],
-  [[            ██║     ██████╔╝███████║█████╗     ██║               ]],
-  [[            ██║     ██╔══██╗██╔══██║██╔══╝     ██║               ]],
-  [[            ╚██████╗██║  ██║██║  ██║██║        ██║               ]],
-  [[             ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝        ╚═╝               ]],
-  [[███████╗███████╗███████╗██╗ ██████╗██╗███████╗███╗   ██╗████████╗]],
-  [[██╔════╝██╔════╝██╔════╝██║██╔════╝██║██╔════╝████╗  ██║╚══██╔══╝]],
-  [[█████╗  █████╗  █████╗  ██║██║     ██║█████╗  ██╔██╗ ██║   ██║   ]],
-  [[██╔══╝  ██╔══╝  ██╔══╝  ██║██║     ██║██╔══╝  ██║╚██╗██║   ██║   ]],
-  [[███████╗██║     ██║     ██║╚██████╗██║███████╗██║ ╚████║   ██║   ]],
-  [[╚══════╝╚═╝     ╚═╝     ╚═╝ ╚═════╝╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ]],
-  [[  ███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗███████╗  ]],
-  [[  ██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║██╔════╝  ]],
-  [[  ███████╗ ╚████╔╝ ███████╗   ██║   █████╗  ██╔████╔██║███████╗  ]],
-  [[  ╚════██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║╚════██║  ]],
-  [[  ███████║   ██║   ███████║   ██║   ███████╗██║ ╚═╝ ██║███████║  ]],
-  [[  ╚══════╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚══════╝  ]],
-}
-
 local function lineToStartGradient(lines)
   local out = {}
   for i, line in ipairs(lines) do
@@ -138,37 +73,6 @@ local function lineToStartGradient(lines)
   return out
 end
 
-local function lineToStartPopGradient(lines)
-  local out = {}
-  for i, line in ipairs(lines) do
-    local hi = "StartLogo" .. i
-    if i <= 6 then
-      hi = "StartLogo" .. i + 6
-    elseif i > 6 and i <= 12 then
-      hi = "StartLogoPop" .. i - 6
-    end
-    table.insert(out, { hi = hi, line = line})
-  end
-  return out
-end
-
-local function lineToStartShiftGradient(lines)
-  local out = {}
-  for i, line in ipairs(lines) do
-    local n = i
-    if i > 6 and i <= 12 then
-      n = i + 6
-    elseif i > 12 then
-      n = i - 6
-    end
-    table.insert(out, { hi = "StartLogo"..n, line = line})
-  end
-  return out
-end
-
-local cool = lineToStartPopGradient(coolLines)
-local robust = lineToStartShiftGradient(robustLines)
-local efficient = lineToStartGradient(efficientLines)
 local matt = lineToStartGradient(mattLines)
 
 
@@ -212,6 +116,9 @@ local function header_color()
     table.insert(lines, line)
   end
 
+  table.insert(lines, {type = "padding", val = 1})
+  table.insert(lines, {type = "text", val = os.date("%Y-%m-%d %H:%M:%S"), opts = { position = "center" }})
+
   local output = {
     type = "group",
     val = lines,
@@ -231,13 +138,13 @@ local buttons = {
         { type = "padding", val = 1 },
         dashboard.button("e", "  New file", "<cmd>ene<CR>"),
         dashboard.button("f", "  Find file", "<cmd>Telescope file_browser<CR>"),
-        dashboard.button("SPC f w", "  Find text"),
+        dashboard.button("w", "  Find text", "<cmd>Telescope live_grep<CR>"),
         dashboard.button("u", "  Update plugins", "<cmd>PackerSync<CR>"),
         dashboard.button("q", "  Quit", "<cmd>qa<CR>"),
     },
     position = "center",
 }
--- config.layout[1] = { type = "padding", val = 2 },
+config.layout[1] = { type = "padding", val = vim.fn.max { 2, vim.fn.floor(vim.fn.winheight(0) * 0.2) } }
 config.layout[2] = header_color()
 config.layout[6] = buttons
 return config
