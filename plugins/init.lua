@@ -27,7 +27,4 @@ return {
   ["nvim-telescope/telescope-file-browser.nvim"] = {
     config = require('user.plugins.add-on.telescope')
   },
-  -- ["rmagatti/auto-session"] = {
-  --   config = require('user.plugins.add-on.auto-session')
-  -- }
 }
